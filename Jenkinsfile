@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'your-agent-label' // Replace with your agent's label
+        label 'dev' // Replace with your agent's label
     }
 
     environment {
