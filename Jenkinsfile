@@ -17,9 +17,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                script {
-                    docker.build("${DOCKER_IMAGE}:latest")
-                }
+                sh 'sudo docker build -t ${DOCKER_IMAGE}:latest .'
             }
         }
 
