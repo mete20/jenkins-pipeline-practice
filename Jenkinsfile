@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'your-agent-label' // Replace with your agent's label
+    }
 
     environment {
         DOCKER_CREDENTIALS_ID = 'dockerhub-78' 
